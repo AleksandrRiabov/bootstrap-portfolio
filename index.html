@@ -7,23 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Bootstrap-portfolio</title>
 </head>
 
 <body>
 
   <header class="mainheader">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="#">A Riabov</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">=</span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#aboutMe">About Me <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#work">Work</a>
@@ -39,7 +40,155 @@
     </nav>
   </header>
 
+  <!-- Herro section -->
+  <section class="hero-section">
+    <div class="hero-section-top">
+      <h2 class="hero-subtitle">Welcome to my page!</h2>
+    </div>
+    <div class="container">
+      <div class="row greetings">
+        <div class="col-md-3 d-flex align-items-center justify-content-center">
+          <img class="personal-photo"
+            src="https://avatars.githubusercontent.com/u/61385379?s=400&u=3d0d001bad3dd6565f87fbd6c30220814874016e&v=4"
+            alt="Personal photo Aleksandr Riabov">
+        </div>
+        <div class="col-md-9 d-flex align-items-center">
+          <div class="greettingsContent">
+            <h3>Hi, my name is Aleksandr Riabov and I'm the Web Developer.</h3>
+            <p>On this page you can find some information about me, my skils and projects.</p>
+            <p>Checkout my works in "Work" section. Unless explicitly stated otherwise, all their back-end and front-end
+              parts were completely done by me..</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- About me -->
+  <section id="about" class="pageSection">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 sectionTitle">
+          <h2>About Me</h2>
+        </div>
+        <div class="col-md-10 sectionContent">
+          <p>I'm proactive and results oriented self-taught web development enthusiast, I have a keen interest in
+            emerging
+            technology and key strengths in HTML, CSS, JavaScript, React, Node.Js (Express), MongoDB..</p>
+          <br>
+          <p>In addition to my professional qualifications, I have also recently completed the ‘Web Development’ course
+            on
+            Udemy, and I use my free time to refine these skills wherever I can. In parallel, I have proactively sought
+            work experience where I can utilise my computer knowledge whilst developing my interpersonal and
+            communication
+            skills. I am now looking for a Junior Web Developer or Software Engineer role, where I can continue to learn
+            and develop, whilst adding value to my team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== Work ====== -->
+  <section class="pageSection">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 sectionTitle">
+          <h2>Work</h2>
+        </div>
+        <div class=" col-md-10 sectionContent">
+          <div class="container">
+            <div class="row">
+              <!-- Card 1 -->
+              <div class="card col-md-4 mb-2" style="width: 18rem;">
+                <img src="./images/movies.jpg" class="card-img-top" alt="movies react app preview">
+                <div class="card-body">
+                  <h5 class="card-title">Movies App</h5>
+                  <p class="card-text">This App allows you to view popular, now playing and top rated movies. And much
+                    more..
+                    movies,etc.</p>
+                  <a href="https://aleksandrriabov.github.io/movies/#/" class="btn btn-primary">Go to Web Page</a>
+                </div>
+              </div>
+              <!-- Card End -->
+              <!-- Card 2 -->
+              <div class="card col-md-4 mb-2" style="width: 18rem;">
+                <img src="./images/pToolLarge.jpg" class="card-img-top" alt="Planning tool MERN App preview">
+                <div class="card-body">
+                  <h5 class="card-title">Planning Tool</h5>
+                  <p class="card-text">This is a full stack application on: React, NodeJs, Express, MongoDB.
+                    Also used Material Ui, Moment.js, chart.js, react-countup libraries.</p>
+                  <a href="https://github.com/AleksandrRiabov/fs-planning-tool" class="btn btn-primary">GitHub Repo</a>
+                </div>
+              </div>
+              <!-- Card End -->
+              <!-- Card 3-->
+              <div class="card col-md-4 mb-2" style="width: 18rem;">
+                <img
+                  src="https://camo.githubusercontent.com/8547db8064585b30070cf621ecd2047c03e8a06131c17852a410d75bfdf53d8a/68747470733a2f2f616c656b73616e6472726961626f762e6769746875622e696f2f636f7669642f7374617469632f6d656469612f636f7669642e33363338663335362e706e67"
+                  class="card-img-top" alt="movies react app preview">
+                <div class="card-body">
+                  <h5 class="card-title">Covid-19</h5>
+                  <p class="card-text">Basic React Application, which use API to display COVID-19 Statistic for
+                    different countries.
+                  </p>
+                  <a href="https://github.com/AleksandrRiabov/covid" class="btn btn-primary">GitHub Repo</a>
+                </div>
+              </div>
+              <!-- Card End -->
+              <!-- Card 4-->
+              <div class="card col-md-6 mb-2">
+                <img src="./images/Portfolio.png" class="card-img-top" alt="movies react app preview">
+                <div class="card-body">
+                  <h5 class="card-title">Portfolio</h5>
+                  <p class="card-text">Personal WebSite with HOME, PORTFOLIO, ABOUT and GET IN TOUCH Pages.</p>
+                  <a href="https://aleksandrriabov.github.io/portfolio/#/" class="btn btn-primary">Go to Web Page</a>
+                </div>
+              </div>
+              <!-- Card End -->
+              <!-- Card 5-->
+              <div class="card col-md-6 mb-2">
+                <img src="./images/Screenshot.png" class="card-img-top" alt="movies react app preview">
+                <div class="card-body">
+                  <h5 class="card-title">Second Portfolio</h5>
+                  <p class="card-text">This is my second portfolio build with HTML, CSS</p>
+                  <a href="https://aleksandrriabov.github.io/module-2-challenge/" class="btn btn-primary">Go to Web
+                    Page</a>
+                </div>
+              </div>
+              <!-- Card End -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======= Contact ======== -->
+  <section class="pageSection contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 sectionTitle">
+          <h2>Contact Me</h2>
+        </div>
+
+        <div class=" col-md-10 sectionContent">
+          <ul class="contactInfo">
+            <li class="detail">Phone: 07946434599</li>
+            <li class="detail">Email: sania.riabov@gmail.com</li>
+            <li class="detail">
+              <a href="https://www.linkedin.com/in/aleksandr-riabov/" class="social">LinkedIn</a>
+            </li>
+            <li class="detail">
+              <a href="https://github.com/AleksandrRiabov" class="social">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

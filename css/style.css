@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #ededf6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-light: #fff;
+  --primary-blue: #92cbcd;
+  --primary-dark: #32343d;
+  --secondary-dark: #445877;
+  --primary-hover: gold;
+}
+
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-dark);
+}
+
+.navbar-brand {
+  background-color: var(--primary-blue);
+  padding: 5px 5px 5px 30px;
+  line-height: 1;
+  margin-left: -16px;
+  color: var(--primary-dark);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  margin: 0 5px;
+  border-bottom: 2px solid var(--primary-blue);
+}
+
+.nav-link {
+  color: var(--primary-blue);
+  line-height: 1;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid var(--primary-hover);
+}
+
+.nav-link:hover {
+  color: var(--primary-hover);
+}
+
+.navbar-toggler{
+  color: var(--primary-blue);
+}
+
+
+/* Hero section */
+
+.hero-section-top {
+  height: 25vh;
+  background: url('/images/02-hero-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-subtitle {
+  padding: 5px;
+  position: absolute;
+  right: 20%;
+  bottom: 10%;
+  background-color: var(--primary-blue);
+}
+
+.greetings {
+  padding-top: 50px;
+}
+
+.personal-photo {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.greettingsContent {
+  padding: 20px;
+  background-color: var(--primary-blue);
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+
+/* Sections */
+.pageSection {
+  margin-top: 60px;
+}
+
+.sectionTitle {
+  border-right: 3px solid var(--secondary-dark);
+  padding: 5px 15px;
+  text-align: right;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sectionContent {
+  padding: 5px 15px;
+}
+
+
+.card {
+  padding: 0;
+}
+
+
+/* contact */
+
+.contact {
+  margin-bottom: 70px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.detail {
+  list-style: none;
+  margin-right: 20px;
+  border-bottom: 2px solid var(--primary-dark);
+  padding: 3px;
+}
+
+.detail:hover {
+  box-shadow: 0px 0, -0.3em 0 0.1em var(--primary-blue);
+}
+
+.social {
+  text-decoration: none;
+}
