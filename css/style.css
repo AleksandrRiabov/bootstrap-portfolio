@@ -38,6 +38,13 @@ a {
 }
 
 
+.btn:hover {
+  background-color: var(--primary-dark);
+  box-shadow: 0px 15px 20px rgba(146, 203, 205, 0.8);
+  color: #fff;
+  border: 1px solid transparent;
+}
+
 /* Navbar */
 .navbar {
   background-color: var(--primary-dark);
@@ -71,7 +78,7 @@ a {
   color: var(--primary-hover);
 }
 
-.navbar-toggler{
+.navbar-toggler {
   color: var(--primary-blue);
 }
 
@@ -135,35 +142,36 @@ a {
 }
 
 
+.contentContainer {
+  padding: 0;
+}
+
 .card {
   padding: 0;
 }
 
+.card img {
+  height: 30vh;
+  object-fit: cover;
+}
+
 
 /* contact */
-
 .contact {
   margin-bottom: 70px;
 }
 
-.contactInfo {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-around;
-}
 
 .detail {
   list-style: none;
-  margin-right: 20px;
-  border-bottom: 2px solid var(--primary-dark);
-  padding: 3px;
+  margin-bottom: 20px;
 }
 
-.detail:hover {
+.detail > span {
+  border-bottom: 2px solid var(--primary-dark);
+}
+
+.detail span:hover {
   box-shadow: 0px 0, -0.3em 0 0.1em var(--primary-blue);
 }
 
-.social {
-  text-decoration: none;
-}
