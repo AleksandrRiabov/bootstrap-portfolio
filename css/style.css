@@ -150,6 +150,20 @@ a {
   padding: 0;
 }
 
+
+.skills {
+  font-family: Inter,Helvetica Neue,Arial,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5555555556;
+  margin: 0;
+  text-align: left;
+}
+
+.skills p {
+  font-weight: bold;
+}
+
 .card {
   padding: 0;
 }
@@ -193,6 +207,7 @@ a {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  margin-top: 20px;
 }
 
 .footerLeft,
@@ -219,4 +234,17 @@ a {
 .footerRight,
 .footerCenter {
   text-align: center;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .sectionTitle {
+    border-bottom: 2px solid var(--primary-light);
+    border-right: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    justify-content: center;
+  }
 }
