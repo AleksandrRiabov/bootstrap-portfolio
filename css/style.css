@@ -61,7 +61,7 @@ a {
 }
 
 .nav-item {
-  margin: 0 5px;
+  margin: 0 10px;
   border-bottom: 2px solid var(--primary-blue);
 }
 
@@ -145,14 +145,14 @@ a {
   padding: 5px 15px;
 }
 
-
 .contentContainer {
   padding: 0;
 }
 
+/* Skills */
 
 .skills {
-  font-family: Inter,Helvetica Neue,Arial,sans-serif;
+  font-family: Inter, Helvetica Neue, Arial, sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.5555555556;
@@ -160,10 +160,17 @@ a {
   text-align: left;
 }
 
+.skills ul {
+  padding: 5px;
+}
+
 .skills p {
   font-weight: bold;
 }
 
+
+
+/* work */
 .card {
   padding: 0;
 }
@@ -177,11 +184,11 @@ a {
   margin-top: 10px;
 }
 
+
 /* contact */
 .contact {
   margin: 40px 0 20px 0;
 }
-
 
 .detail {
   list-style: none;
@@ -236,7 +243,12 @@ a {
   text-align: center;
 }
 
+.footer span {
+  color: var(--secondary-dark);
+}
 
+
+/* =======  smaller then 767px =======*/
 
 @media screen and (max-width: 767px) {
   .sectionTitle {
