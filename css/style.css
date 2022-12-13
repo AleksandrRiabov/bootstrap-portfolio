@@ -91,7 +91,7 @@ a {
 
 .hero-section-top {
   height: 25vh;
-  background: url('/images/02-hero-bg.jpg');
+  background: url('./images/02-hero-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
